@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Widgets</title>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+
+  <!-- <script type="module" src="./mta-ct.js"></script> -->
+  <!-- <script src="./mta-oif.js"></script> -->
+  <script>
+    function changeUrlToConvert() {
+      window.history.pushState('convert', 'Title', '/abd');
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Mobile Text Alerts Tracking Code START -->
+  <div id="mta-tracking" data-account="new_keyword"></div>
+  <script type="module" src="https://platform.mta-staging-platform.com/widgets/mta-ct.js"></script>
+  <!-- Mobile Text Alerts Tracking Code END -->
+  <button onclick="changeUrlToConvert();">Change to url '/abd'</button>
+  <div id="mta-wb" data-account="6seaqz8t2t2"></div>
+  <script type="module" src="./mta-wb.ts"></script>
+</body>
+
+</html>
